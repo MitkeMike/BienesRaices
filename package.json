@@ -1,0 +1,26 @@
+{
+  "name": "bienesraices",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MitkeMike/BienesRaices.git"
+  },
+  "keywords": [
+    "MVC",
+    "Pug",
+    "Tailwind",
+    "MySQL",
+    "Sequelize"
+  ],
+  "author": "Mike Mitchel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MitkeMike/BienesRaices/issues"
+  },
+  "homepage": "https://github.com/MitkeMike/BienesRaices#readme"
+}
