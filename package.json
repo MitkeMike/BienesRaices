@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Mi primer proyecto",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": " node index.js",
     "server": "nodemon index.js"
@@ -25,7 +26,8 @@
   },
   "homepage": "https://github.com/MitkeMike/BienesRaices#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
