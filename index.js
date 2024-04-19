@@ -1,4 +1,6 @@
 import express from 'express'; // Import express
+import csrf from 'csurf';
+import cookieParser from 'cookie-parser';
 import usuarioRoutes from './routes/usuarioRoutes.js'; // Import the router object
 import db from './config/db.js';
 
@@ -7,6 +9,12 @@ const app = express(); // Create an express app
 
 //Habilitar lectura de datos de formularios
 app.use(express.urlencoded({ extended: true }));
+
+//Habilitar cookies-parser
+app.use(cookieParser());
+
+//Habilitar CSRF
+app.use(csrf({ cookie: true }));
 
 
 //Conexion a la base de datos
@@ -19,7 +27,7 @@ try {
 }
 
 //Definimos el puerto
-const port = 3000; // Set the port
+const port = process.env.PORT || 3000; // Set the port
 
 
 //Habilitar pug
