@@ -2,6 +2,7 @@ import express from 'express'; // Import express
 import csrf from 'csurf';
 import cookieParser from 'cookie-parser';
 import usuarioRoutes from './routes/usuarioRoutes.js'; // Import the router object
+import propiedadesRoutes from './routes/propiedadesRoutes.js';
 import db from './config/db.js';
 
 
@@ -39,7 +40,7 @@ app.use(express.static('public'));
 
 //Routing
 app.use('/auth', usuarioRoutes); // Use the router object to handle requests to the root URL
-
+app.use('/', propiedadesRoutes);
 
 
 app.listen(port, () => {
